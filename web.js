@@ -11,10 +11,11 @@ app.get('/', function(request, response) {
         throw err;
     }
     buffer = buf;
-  });     
-  text=buffer.toString();
+    response.send(buffer);
+  }); 
+ //text=buffer.toString();
   response.send('Hello World 2');
-  response.send(text);   
+  response.send('text');   
 });
 
 var port = process.env.PORT || 5000;
