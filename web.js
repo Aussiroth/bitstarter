@@ -5,7 +5,7 @@ fs = require('fs')
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  var test='test';
+  var text='test';
   response.send(text); 
 });
 
