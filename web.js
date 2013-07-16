@@ -10,8 +10,8 @@ app.get('/', function(request, response) {
     if (err) {
         throw err;
     }
-    buffer = buf;
-    response.send(buffer);
+    //buffer = buf;
+    //response.send(buffer);
   }); 
  //text=buffer.toString();
   response.send('Hello World 2');
