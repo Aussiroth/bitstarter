@@ -13,7 +13,6 @@ app.get('/', function(request, response) {
     //buffer = buf;
     //response.send(buffer);
   }); 
- //text=buffer.toString();
   response.send('Hello World 2');
   response.send('text');   
 });
