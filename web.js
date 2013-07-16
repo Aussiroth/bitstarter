@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
         throw err;
     }
     inbuff = buf;
-  }     
+  });     
   text=buf.toString();
   response.send('Hello World 2');
   response.send(text);   
