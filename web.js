@@ -10,9 +10,9 @@ app.get('/', function(request, response) {
     if (err) {
         throw err;
     }
-    inbuff = buf;
+    buffer = buf;
   });     
-  text=buf.toString();
+  text=buffer.toString();
   response.send('Hello World 2');
   response.send(text);   
 });
