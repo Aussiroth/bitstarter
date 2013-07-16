@@ -4,7 +4,12 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   
-  buf=fs.readFileSync('index.html');
+  fs.ReadFileSync('index.html', function read(err, buf) {
+    if (err) {
+        throw err;
+    }
+    inbuff = buf;
+  }     
   text=buf.toString();
   response.send('Hello World 2');
   response.send(text);   
