@@ -5,7 +5,9 @@ fs = require('fs')
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  var text='test';
+  fs.readFileSync('index.html', function(err, data) {
+    if (err) {throw err;}
+  }  
   response.send(text); 
 });
 
